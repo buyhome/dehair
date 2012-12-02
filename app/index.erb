@@ -1,0 +1,26 @@
+<div data-role="page" data-url="<%= Rho::RhoConfig.start_path %>/">
+
+  <div data-role="header" data-position="inline">
+    <h1>deHair</h1>
+    <% if SyncEngine::logged_in > 0 %>
+    <a href="<%= url_for :controller => :Settings, :action => :logout %>" class="ui-btn-right" data-icon="star">
+	    退出
+	  </a>
+    <% else %>
+        <a href="<%= url_for :controller => :Settings, :action => :login %>" class="ui-btn-right" data-icon="star">登录</a>
+    <% end %>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview">
+      <li><a href="#">预约提示</a></li>
+      <li><a href="#">海量发型</a></li>
+      <li><a href="#">潮流精选</a></li>
+      <li><a href="#">大家分享</a></li>
+      <li><a href="#">店铺搜索</a></li>
+      <li><a href="#">我的账户</a></li>
+      <li><a href="#">+</a></li>
+    </ul>
+  </div>
+
+</div>

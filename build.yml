@@ -1,0 +1,28 @@
+#sdk: "/Library/Ruby/Gems/1.8/gems/rhodes-3.3.3"
+sdkversion: 3.3.2
+name: deHair
+version: 1.0
+vendor: rhomobi
+build: debug
+bbver: 4.6
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator5.0
+  provisionprofile: 
+  codesignidentity: 
+  entitlements: 
+  BundleIdentifier: com.rhomobi.dehair
+  BundleURLScheme: dehair
+wp:
+  productid: 1f83bc40-1c6f-0130-761e-102b346a1a86
+symbian:
+  uid: 3870539395
+android:
+  version: 2.1
+extensions:
+  - json
+  - another-extension
+sdk: /Library/Ruby/Gems/1.8/gems/rhodes-3.3.2
+capabilities:
+  - gps
